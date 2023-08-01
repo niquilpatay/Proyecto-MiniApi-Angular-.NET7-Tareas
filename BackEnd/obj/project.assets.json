@@ -3924,11 +3924,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\ProyectoAngular\\ProyectoAngular.csproj",
+      "projectUniqueName": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\1 - PROYECTO ANGULAR + .NET CODIGOESTUDIANTE\\REPOSITORIO - Proyecto Angular + NET Mini API\\BackEnd\\ProyectoAngular.csproj",
       "projectName": "ProyectoAngular",
-      "projectPath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\ProyectoAngular\\ProyectoAngular.csproj",
+      "projectPath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\1 - PROYECTO ANGULAR + .NET CODIGOESTUDIANTE\\REPOSITORIO - Proyecto Angular + NET Mini API\\BackEnd\\ProyectoAngular.csproj",
       "packagesPath": "C:\\Users\\niqui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\ProyectoAngular\\obj\\",
+      "outputPath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\1 - PROYECTO ANGULAR + .NET CODIGOESTUDIANTE\\REPOSITORIO - Proyecto Angular + NET Mini API\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\niqui\\AppData\\Roaming\\NuGet\\NuGet.Config",

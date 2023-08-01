@@ -1,0 +1,124 @@
+1- CREACIÓN DE BD
+
+create table Tarea(
+idTarea int primary key identity,
+nombre varchar(40)
+)
+insert into Tarea(nombre) values
+('Aprender Angular'),
+('Aprender Blazor'),
+('Aprender C++')
+
+----------------
+
+2- .NET DB FIRST
+
+1. crear dbContext en proyecto .NET 
+
+a - string de conexión: "Server=; DataBase=; Trusted_Connection=; TrustServerCertificate=;"
+
+b - creación de dbContext: Scaffold-DbContext "Server=; DataBase=; Trusted_Connection=; TrustServerCertificate=;" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+
+c - json de configuración
+  "ConnectionStrings": {
+    "connectionString": "Data Source=; Initial Catalog=;user id=;pwd=; TrustServerCertificate=;"
+  }
+
+2. TareaController.cs
+
+3. Añadir DB a Program.cs
+
+------------------
+
+3- ALOJAR API EN SOMEE
+
+user: 
+password: 
+
+a. CREAR BD EN SOMEE
+-Database name
+nombre BD somee: 
+-MS SQL Server version
+
+b. En BD, RUN-TSQL -> open RUNT-SQL CONSOLE
+
+create table Tarea(
+idTarea int primary key identity,
+nombre varchar(40)
+)
+insert into Tarea(nombre) values
+('Aprender Angular'),
+('Aprender Blazor'),
+('Aprender C++')
+
+c. CREAR WEBSITE SOMEE
+nombre web somee: 
+-Dejar el resto de configs sin tocar (Agregar site title y site description)
+
+d. Datos somee para nueva cadena de conexion:
+workstation id=
+packet size=
+user id=
+pwd=
+data source=
+persist security info=
+initial catalog=
+
+connString nueva para JSON de configuracion:
+Data Source=; Initial Catalog=; user id=; pwd=; TrustServerCertificate=;
+
+e. Agregar cors y swagger en Program.cs en .NET
+
+f. Publicar proyecto .NET
+-Proyecto -> Publicar -> Servidor FTP/FTPS
+
+-datos:
+Websites -> website a publicar -> opciones FTP
+-Addresses(2da con IP) -> Servidor
+-URL (2da) -> Direccion URL de destino
+-Username -> Nombre de usuario
+-Contraseña -> Contraseña de nuestra cuenta
+
+Mostrar todas las configuraciones -> Eliminar todos los archivos existentes antes de publicar (CHECKED) -> Guardar
+
+-PUBLICAR
+
+http://.somee.com/
+https://www..somee.com/swagger/index.html
+
+g. SSL CERTIFICATE -> Free certificate orders -> Registered domain (DOMINIO DE NUESTRA API) -> Organization -> Department - City - Province - Country -> Renew certificate automatically(UNCHECKED) -> CREATE ORDER FOR FREE CERTIFICATE 
+-------------
+
+4 - CREAR APP ANGULAR
+
+a. carpeta nueva -> cmd -> ng new AppTarea
+-No
+-CSS
+
+b. carpeta AppTarea -> cmd -> code .
+
+c. 
+ctrl + ñ en proyecto -> npm install bootstrap@5.2.2 --save
+en angular.json -> 
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+d. desarrollar app angular
+src -> app -> Interfaces -> tarea.ts
+
+src -> app -> Services -> tarea.ts (ng generate service Services/Tarea) -> Eliminar tarea.service.spec.ts
+
+src -> app -> app.module.ts -> importar
+eliminar app.component.spec.ts
+
+desarrollar html en app.component.html y app.component.ts
+
+e.
+ng serve --open (ejecutar aplicacion)
+ng build (crear carpeta de proyecto)
+buscar AppTarea -> dist -> app-tarea -> subir a netlify

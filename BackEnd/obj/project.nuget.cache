@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pbTkXe45nq1TCljgA80vzqpsqm5NX8RUh0fxogBZP1TDy9RhxRQaO4/PLu2d7uihZ+JuzNdXLh2Ssxm37TwWsA==",
+  "dgSpecHash": "3vcbhkaIJWUaKF7uWpoFyVNlLGD84oUzRdxnfwFONvDPuwKEFT78GT4OdXDOcgWYPBZC+b+jG+10t8qfnCSohA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\ProyectoAngular\\ProyectoAngular.csproj",
+  "projectFilePath": "C:\\Users\\niqui\\Documents\\ProyectosPersonales\\1 - PROYECTO ANGULAR + .NET CODIGOESTUDIANTE\\REPOSITORIO - Proyecto Angular + NET Mini API\\BackEnd\\ProyectoAngular.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\niqui\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\niqui\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
