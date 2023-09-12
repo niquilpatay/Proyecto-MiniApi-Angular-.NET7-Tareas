@@ -1,7 +1,5 @@
 # Proyecto-MiniApi-Angular-.NET7-Tareas
-Pequeño gestor de tareas desarrollado en app Angular, .NET 7 y SQL Server con host en netlify y somee. 
-
-Recursos / prácticas aplicadas:
+Pequeño gestor de tareas desarrollado en app Angular, .NET 7 y SQL Server con host en netlify y somee. Recursos / prácticas aplicadas:
 
 . Inyección de Dependencias (desacoplar componentes de manera que puedan ser reutilizados, probados y mantenidos de manera más eficiente)
 
