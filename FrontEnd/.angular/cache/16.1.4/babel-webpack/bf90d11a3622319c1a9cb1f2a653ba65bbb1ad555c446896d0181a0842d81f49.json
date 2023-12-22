@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: false,\n  endPoint: \"https://www.proyectoangularkilpa.somee.com/api/\"\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

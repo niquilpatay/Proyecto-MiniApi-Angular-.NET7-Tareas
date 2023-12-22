@@ -1,0 +1,27 @@
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-4 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Lista de Tareas
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="formularioTarea">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ingresar Tarea" formControlName="nombre">
+                            <button class="btn btn-primary" type="button" [disabled]="formularioTarea.invalid" (click)="agregarTarea()">Agregar</button>
+                        </div>
+                    </form>
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let tarea of listaTareas">
+                            <div class="d-flex justify-content-between">
+                                <label>{{tarea.nombre}}</label>
+                                <button class="btn btn-danger btn-sm" type="button" (click)="eliminarTarea(tarea)">Eliminar</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
